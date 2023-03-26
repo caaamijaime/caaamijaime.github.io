@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV Camila Jaime Rodríguez</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700;1,900&family=Lilita+One&family=Roboto:ital,wght@0,100;0,500;0,900;1,100;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="plane.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="funciones.js"></script>
+
+
+</head>
+
+<body>
+  
+  <!--NAV BAR-->
+  <header>
+
+       <nav id="nav">
+            
+            <ul id="links"> 
+               <li><a href=#inicio onclick="seleccionar()">INICIO</a></li>
+               <li><a href=#sobremi onclick="seleccionar()">SOBRE MÍ</a></li>
+               <li><a href=#formacion-academica onclick="seleccionar()">FORMACIÓN ACADÉMICA</a></li>
+               <li><a href=#experiencia onclick="seleccionar()">EXPERIENCIA</a></li>
+               <li><a href=#habilidades onclick="seleccionar()">HABILIDADES</a></li>
+               <li><a href=#contacto onclick="seleccionar()">CONTACTO</a></li>
+            </ul>
+        
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
+  </header>
+    
+  <main>
+
+    <!--INICIO-->  
+    <section id="inicio">
+        <h1><span class="resaltado">Camila Jaime Rodríguez</span></h1>
+        <div class="imagenperfil">
+           <img src="imagen_perfil.jpg" alt="Foto de perfil">
+        </div>
+
+        <h2><span id="borde">Licenciada en Turismo</span></h2>
+   
+    </section>
+
+    <!--SECCIÓN SOBRE MÍ-->
+    <section class="apartados" id="sobremi">
+        <div class="info-seccion">
+            <div class="iconos-chicos">
+              <i class="fa-solid fa-user"></i>
+            </div>
+
+           <div class="parte-texto">
+               <h3>Sobre mí</h3>
+           </div>
+            
+            <ol>
+                <li><span id="negrita">Edad:</span> 23 años</li>
+                <li><span id="negrita">Lugar de residencia:</span> Mar del Plata</li>    
+            </ol>
+        </div>
+    </section> 
+
+    <!--SECCIÓN FORMACIÓN ACADÉMICA-->
+    <section class="apartados" id="formacion-academica">
+        <div class="formacion">
+            <div class="iconos-chicos">
+                <i class="fa-sharp fa-solid fa-book"></i>
+            </div>
+            
+            <div class="parte-texto">
+                <h3>Formación Académica</h3>
+            </div>
+
+            <h4>Licenciatura en Turismo</h4>
+            <p>Universidad Nacional de Mar del Plata (2018-2022)</p>
+
+            <h4>Curso de herramientas para presentaciones visuales y publicaciones digitales</h4>
+            <p>Universidad Nacional de Mar del Plata - SIED (2022)</p>
+            
+            <h4>SABRE - Capacitación para nuevos agentes</h4>
+            <p>(2022)</p>
+
+            <h4>Manipulador de alimentos</h4>
+            <p>Escuela Municipal de Formación Profesional N°5 (2022)</p>
+            
+            <h4>Inglés Nivel 6</h4>
+            <p>Instituto Cem English (2009-2015)</p>
+        </div>
+    </section>
+    
+    <!--SECCIÓN EXPERIENCIA LABORAL-->
+    <section class="apartados" id="experiencia">
+        <div class="experiencia-laboral">
+            <div class="iconos-chicos">
+                <i class="fa-solid fa-briefcase"></i>
+            </div>
+            
+            <div class="parte-texto">
+                <h3>Experiencia laboral</h3>
+            </div>
+            
+            <h4>Recepcionista</h4>
+            <p>Hotel Los Angeles (Febrero-Marzo 2022)</p>
+
+            <h4>Camarera de salón y delivery</h4>
+            <p>Maktub Cafetería (2021-2022)</p>
+            
+            <div class="parte-texto">
+                <h3>Otras experiencias</h3>
+            </div>
+
+            <h4>Organización de eventos - CIT CONDET 2022</h4>
+            <p>Tareas: Asistencia administrativa a Secretaria de RRPP.</p>
+
+            <h4>Ente Municipal de Turismo de Mar del Plata- Área de Asistencia al Turista</h4>
+            <p>Prácticas Pre Profesionales (Febrero 2022)</p>
+
+             
+        </div>
+    </section>
+    
+    <!--SECCIÓN HABILIDADES-->
+    <section class="apartados" id="habilidades">
+        <div class="mis-habilidades">
+            <div class="iconos-chicos">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            
+            <div class="parte-texto">
+                <h3>habilidades</h3>
+            </div>
+    
+        </div>
+        
+        <div class="barras">
+            <div class="progreso">
+            <p>COORDINACIÓN DE GRUPOS</p>
+                <progress id="coordinacion-grupos" max="100" value="100"></progress>
+                <span></span>
+            
+            </div>
+            
+            <div class="progreso">
+            <p>TRABAJO EN EQUIPO</p>
+                <progress id="trabajo-equipo" max="100" value="100"></progress>
+                <span></span>
+            
+            </div>
+            
+            <div class="clear"></div>
+        
+            <div class="progreso">
+            <p>MARKETING DIGITAL</p>
+                <progress id="marketing-digital" max="100" value="60"></progress>
+                <span></span>
+            
+            </div>
+            <div class="clear"></div>
+                
+            <div class="progreso">
+            <p>ADOBE LIGHTROOM</p>
+                <progress id="lightroom" max="100" value="75"></progress>
+                <span></span>
+            
+            </div>
+            
+            </div>
+                
+            <input type="button" id="boton" value="Recargar" />
+       
+            
+        </div>
+    
+        <script type="text/javascript"> 
+    
+        window.onload = function() { 
+            
+            animateprogress("#coordinacion-grupos",100);
+            animateprogress("#trabajo-equipo",100);
+            animateprogress("#marketing-digital",60);
+            animateprogress("#lightroom",75);
+        } 	
+
+        document.querySelector ('#boton').addEventListener ('click', function() { 
+            animateprogress("#coordinacion-grupos",100);
+            animateprogress("#trabajo-equipo",100);
+            animateprogress("#marketing-digital",60);
+            animateprogress("#lightroom",75);
+       
+        });
+    
+    
+        </script>
+    </section> 
+    
+  </main>
+
+  <!--SECCIÓN CONTACTO-->
+
+  <footer>
+
+    <h2>CONTACTAME</h2>
+
+    <div id="redes-sociales">
+      <section class="redes" id="contacto">
+          <a href="mailto:camilajxr@gmail.com" class="fa fa-envelope" aria-hidden="true"></a>
+          <a href="https://www.linkedin.com/in/camilajaimerodriguez/" class="fa fa-linkedin"></a>
+
+       </section>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
